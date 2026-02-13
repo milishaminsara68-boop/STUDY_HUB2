@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudyHub</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, sans-serif;
+}
+
+body{
+  background:url('https://images.unsplash.com/photo-1519389950473-47ba0277781c') no-repeat center center/cover;
+  color:white;
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 50px;
+  background:rgba(0,0,0,0.7);
+}
+
+nav h2{
+  font-size:28px;
+  color:#4CAF50;
+}
+
+nav ul{
+  list-style:none;
+  display:flex;
+}
+
+nav ul li{
+  margin-left:20px;
+}
+
+nav ul li a{
+  text-decoration:none;
+  color:white;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+nav ul li a:hover{
+  color:#4CAF50;
+}
+
+.hero{
+  height:90vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  background:rgba(0,0,0,0.6);
+  text-align:center;
+}
+
+.hero h1{
+  font-size:70px;
+  font-weight:bold;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero p{
+  margin-top:20px;
+  font-size:22px;
+}
+
+button{
+  padding:12px 25px;
+  background:#4CAF50;
+  border:none;
+  color:white;
+  font-size:18px;
+  margin-top:20px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  background:#45a049;
+  transform:scale(1.1);
+}
+
+.section{
+  padding:60px 20px;
+  background:white;
+  color:black;
+  text-align:center;
+}
+
+.section h2{
+  margin-bottom:20px;
+}
+
+.cards{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
+.card{
+  background:#f4f4f4;
+  padding:20px;
+  width:250px;
+  border-radius:10px;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+footer{
+  background:#222;
+  color:white;
+  text-align:center;
+  padding:20px;
+}
+
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(-20px);}
+  to{opacity:1; transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <h2>STUDYHUB</h2>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#papers">Papers</a></li>
+    <li><a href="#tutes">Tutes</a></li>
+    <li><a href="#recordings">Recordings</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero" id="home">
+  <h1>WELCOME TO STUDYHUB</h1>
+  <p>Your Future Starts Here</p>
+  <button>Explore Now</button>
+</section>
+
+<section class="section" id="papers">
+  <h2>Papers</h2>
+  <div class="cards">
+    <div class="card">Advanced Level Papers</div>
+    <div class="card">Driving License Papers</div>
+    <div class="card">Model Papers</div>
+  </div>
+</section>
+
+<section class="section" id="tutes">
+  <h2>Tutes</h2>
+  <div class="cards">
+    <div class="card">Maths Tutes</div>
+    <div class="card">Science Tutes</div>
+    <div class="card">English Tutes</div>
+  </div>
+</section>
+
+<section class="section" id="recordings">
+  <h2>Recordings</h2>
+  <div class="cards">
+    <div class="card">Online Classes</div>
+    <div class="card">Revision Sessions</div>
+    <div class="card">Exam Discussions</div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <h2>Contact Us</h2>
+  <p>Email: studyhub@gmail.com</p>
+  <p>Phone: 0771234567</p>
+</section>
+
+<footer>
+  © 2026 STUDYHUB | All Rights Reserved
+</footer>
+
+</body>
+</html>
